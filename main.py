@@ -11,8 +11,10 @@ port = os.environ.get("FLASK_PORT")
 from flask_migrate import Migrate
 from app.app import create_app
 from app.models import db
+from app.admin import admin_view
 
 migrate = Migrate(create_app, db)
+admin_view(create_app,db)
 
 
 if __name__ == "__main__":
