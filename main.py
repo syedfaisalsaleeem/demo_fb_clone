@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
 
+
+
 load_dotenv()
 
 app_settings = os.environ.get("APP_SETTINGS")
